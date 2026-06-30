@@ -1,0 +1,10 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Шалык;Сергей;;;
+FN:Сергей Шалык
+ORG:3D-моделирование и цифровая графика
+TITLE:Специалист по 3D-моделированию
+TEL;TYPE=CELL;TYPE=PREF:+375447886547
+EMAIL;TYPE=WORK:sergiokm@mail.ru
+URL:https://github.io
+END:VCARD
