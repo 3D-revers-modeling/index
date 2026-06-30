@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сергей | 3D-моделирование и цифровая графика</title>
+    <style>
+        :root {
+            --bg-color: #12161a;
+            --card-bg: #1a2126;
+            --accent-color: #00a8ff;
+            --text-color: #e1e7ed;
+            --text-muted: #9aa8b6;
+            --benefit-bg: #222c34;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 15px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 480px;
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 25px 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent-color), #0056b3);
+            margin: 0 auto 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 32px;
+            font-weight: bold;
+            color: #fff;
+            border: 3px solid var(--accent-color);
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+
+        .subtitle {
+            color: var(--accent-color);
+            font-size: 15px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 4px;
+        }
+
+        .geo {
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        .utp {
+            background: rgba(0, 168, 255, 0.1);
+            border-left: 4px solid var(--accent-color);
+            padding: 12px 15px;
+            border-radius: 0 8px 8px 0;
+            font-size: 15px;
+            line-height: 1.4;
+            margin-bottom: 25px;
+        }
+
+        .section-title {
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--text-muted);
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .benefits {
+            margin-bottom: 25px;
+        }
+
+        .benefit-card {
+            background: var(--benefit-bg);
+            padding: 12px 15px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        .benefit-card strong {
+            color: #fff;
+        }
+
+        .highlight {
+            color: #ff4757;
+            font-weight: bold;
+        }
+
+        .formats {
+            color: var(--accent-color);
+            font-family: monospace;
+            font-size: 13px;
+            background: rgba(255,255,255,0.05);
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+
+        .cta {
+            text-align: center;
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 16px;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            color: #fff;
+            transition: transform 0.1s, opacity 0.2s;
+            text-align: center;
+        }
+
+        .btn:active {
+            transform: scale(0.98);
+        }
+
+        .btn-tg { background-color: #0088cc; }
+        .btn-wa { background-color: #25d366; }
+        .btn-portfolio { background-color: #2f3542; border: 1px solid #57606f; }
+        .btn-email { background-color: var(--accent-color); }
+        .btn-vcard { background-color: #747d8c; font-size: 14px; padding: 12px; }
+
+        .footer {
+            text-align: center;
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    
+    <!-- Шапка визитки -->
+    <div class="header">
+        <!-- Вместо буквы С можно вставить ссылку на фото в тег <img src="ссылка"> -->
+        <div class="avatar">С</div>
+        <h1>Сергей</h1>
+        <div class="subtitle">3D-моделирование</div>
+        <div class="geo">🇧🇾 Беларусь | Официально (НПД)</div>
+    </div>
+
+    <!-- Главное предложение -->
+    <div class="utp">
+        Разработка трехмерных цифровых моделей узлов, деталей и оборудования для вашего бизнеса с юридической <strong>экономией 34%</strong>.
+    </div>
+
+    <!-- Выгоды сотрудничества -->
+    <div class="section-title">Выгода для вашей компании:</div>
+    <div class="benefits">
+        <div class="benefit-card">
+            📉 <strong>Экономия <span class="highlight">34%</span> на ФСЗН:</strong> Я плательщик НПД. Вы полностью освобождены от взносов в ФСЗН и Белгосстрах.
+        </div>
+        <div class="benefit-card">
+            💼 <strong>Минус <span class="highlight">13%</span> налогов:</strong> Бухгалтерии не нужно удерживать подоходный налог. Все налоги я плачу самостоятельно.
+        </div>
+        <div class="benefit-card">
+            🧾 <strong>Официальное списание:</strong> Оплата по безналу. Выдаю электронный чек МНС РБ для уменьшения вашей налогооблагаемой прибыли.
+        </div>
+        <div class="benefit-card">
+            ⚙️ <strong>Инженерные форматы:</strong> Передаю готовые файлы в стандартах <span class="formats">.step</span> <span class="formats">.dwg</span> <span class="formats">.pdf</span>.
+        </div>
+        <div class="benefit-card">
+            📜 <strong>Легальный договор:</strong> Работаем по договору возмездного оказания услуг в электронном виде или через оферту.
+        </div>
+    </div>
+
+    <div class="cta">
+        🚀 Отправьте ТЗ или описание задачи. Оперативно рассчитаю стоимость тестового или текущего проекта:
+    </div>
+
+    <!-- Кнопки связи (замените "#" на ваши ссылки) -->
+    <div class="links-container">
+        <a href="https://t.me" target="_blank" class="btn btn-tg">💬 Обсудить в Telegram</a>
+        <a href="https://wa.me" target="_blank" class="btn btn-wa">📱 Написать в WhatsApp</a>
+        <a href="ССЫЛКА_НА_ПОРТФОЛИО" target="_blank" class="btn btn-portfolio">📁 Смотреть 3D-Портфолио</a>
+        <a href="mailto:sergiokm@mail.ru" class="btn btn-email">✉️ Отправить ТЗ на Email</a>
+    </div>
+
+    <!-- Дополнительное действие -->
+    <div class="links-container">
+        <a href="ССЫЛКА_НА_VCF_ФАЙЛ" class="btn btn-vcard">📥 Сохранить контакты в телефон</a>
+    </div>
+
+    <div class="footer">
+        © 3D-Digital Solutions. Все права защищены.
+    </div>
+
+</div>
+
+</body>
